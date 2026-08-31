@@ -1,0 +1,300 @@
+
+.body{
+    overflow-y: hidden;
+}
+.header{
+    background-color: #282828;
+    color: white;
+    display: flex;
+    justify-content: end;
+    column-gap: 20px;
+    border: 1px solid gray;
+    border-top-left-radius:10px ;
+    padding:10px  0 0 0 ;
+}
+
+.header-text{
+    margin-bottom: 30px;
+}
+.header-logo{
+   height: 100%;
+   width: 188px;
+   margin:10px 320px 0 0 ;
+}
+.header ion-icon{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.text-bg{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(90deg,#116984 0,rgba(17,105,132,.77) 23%,rgba(40,40,40,0) 100%);
+    opacity: .75;
+}
+.bg{
+    background-image: url(../image/bg_awards.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    padding: 80px 0 0 0 ;
+    position: relative;
+}
+.text-bg .bg-text{
+    /* padding-top: 40px; */
+    display: grid;
+    color: rgb(250, 248, 248);
+    margin:20px 0 0 200px;
+}
+
+
+.bg-text:nth-of-type(1){
+font-size: 96px;
+font-weight: 700;
+text-transform: uppercase;
+
+}
+.bg-text:nth-of-type(2){
+    font-size: 25px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.bg-text:nth-of-type(3){
+    font-size: 15px;
+    font-family: "Roboto Condensed",Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+font-weight: 700;
+text-transform: uppercase;
+}
+.bg-text:nth-of-type(4){
+    font-size: 40px;
+font-weight: 700;
+text-transform: uppercase;
+border: 1px solid #116984;
+width: 380px;
+background-color: #116984;
+height: 60px;
+border-radius: 40px;
+text-align: center;
+align-items: center;
+}
+.btn ion-icon{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.btn{
+    width: 45px;
+    height: 45px;
+    border: 1px solid white;
+    color: white;
+    padding: 0;
+    margin: 0;
+    border-radius: 100%;
+background-color: #116984; 
+}
+.btn:nth-of-type(1){
+    margin: 40px  20px 0 200px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin:100px 0 0 170px;
+    font-family: "Roboto Condensed",Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+color: #5f6368;
+font-size: 25px;
+}
+.menu-text:hover{
+    color: rgb(0, 183, 255);
+    transition: 1s
+}
+
+
+.menu-btn{
+    background-image: url(../image/search.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+background-size: 40px;
+width: 80px;
+margin-right:130px ;
+border: none;
+margin-top:25px;
+}
+.grid{
+    display: grid;
+   margin-left: 200px;
+   column-gap: 30px;
+    padding-right: 380px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid-img{
+width: 500px;
+}
+.grid button{
+    border: none;
+    background-color: rgb(0, 183, 255);
+    color: white;
+    border-radius: 20px;
+font-size: 15px;
+margin:0  0 30px 160px;
+text-align: center;
+align-items: center;
+width: 150px;
+padding: 5px 0 5px 0 0;
+height: 29px;
+}
+
+.text-one{
+color:  #5f6368!important;;
+    transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out,opacity .2s ease-in-out;;
+    background-color: transparent;
+    font-size: 18px!important;
+line-height: 1.2;
+font-weight: 600;
+}
+.text-two {
+    color: #5f6368;
+}
+.text-tree{
+    color: #5f6368;
+    width: 500;
+    line-height: 1,2;
+    font-size: 17px;
+}
+.text-two:hover{
+    color: rgb(0, 183, 255);
+    transition: 0.7s;
+}
+.footer{
+    background-image: url(../image/karta-mira-chernyi-fon-zemlia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    column-gap: 65px;
+}
+.block-five, .block-for, .block-tree, .block-two,.block-one{
+padding-top: 50px ;
+z-index: 5;
+}
+.block-five ion-icon{
+font-size: 25px;
+margin-left: 18px;
+}
+.title{
+    font-size: 20px;
+}
+.none{
+    display: none;
+}
+.footer-icon{
+    color: white;
+}
+.footer-a{
+text-decoration: none;
+}
+.media{
+    display: none;
+}
+@media screen and (max-width:800px) {
+    #icon {
+        
+        font-size: 20px;
+        margin:0;
+    }
+    .header{
+        width: 100% ;
+        padding-left: 35px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+.header-text{
+    display: none;
+}
+.header-visible{
+    display: block;
+}
+.logo-fixed{
+padding-left: 300px;
+
+}
+.visible{
+      font-size: 15px;
+      padding-left: 10px;
+        }
+.header-logo{
+    width: 100px;
+    height:20px;
+    margin: 0;
+}
+#bg-text{
+    font-size: 15px;
+    margin: 18px 0  0 0;
+    text-align: center;
+    align-items: center;
+}
+#bg-text:nth-of-type(4){
+    width: 250px;
+    margin-left: 60px;
+}
+.btn:nth-of-type(1){
+    margin-left:130px;
+}
+
+.bg{
+    background-image: url(../image/bg_awards.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:50vh;
+    width: 100%;
+    padding: 80px 0 0 0 ;
+    position: relative;
+    padding-left: 35px;
+}
+.menu{
+    font-size: 10px;
+column-gap: 20px;
+margin-right: 145px;
+ 
+}
+.menu-btn{
+display: none;
+}
+.grid-img{
+    width: 250px;   
+    height: 150px;
+margin-left: 50px;
+}
+#text-grid{
+    margin-left:50px ;
+    font-size: 15px;
+}
+#grid-button{
+    margin-left: 80px;
+}
+.grid{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+margin-left: 15px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    height: 300vh;
+text-align: center;
+padding-left:35px ;
+}
+.block-one,.block-two,.block-tree,.block-for,.block-five{
+    margin-right: 45px;
+}
+}
